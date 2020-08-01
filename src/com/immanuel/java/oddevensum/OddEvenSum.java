@@ -1,4 +1,4 @@
-package com.immanuel.oddevensum;
+package com.immanuel.java.oddevensum;
 
 public class OddEvenSum
 {
@@ -12,6 +12,7 @@ public class OddEvenSum
                 oddSum = oddSum + i;
             }
         System.out.println("Sum of Odd Numbers " + oddSum);
+        System.out.println();
         {
             for (j = 0; j <= 20; j++)
                 if (j % 2 == 0)
