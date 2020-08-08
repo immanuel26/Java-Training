@@ -15,7 +15,7 @@ public class ArrayDemo
         {
             System.out.println(name);
         }
-        System.out.println();
+        System.out.println("Chellakutty Rini");
         System.out.println("Names Length : " +names.length);
     }
 }
