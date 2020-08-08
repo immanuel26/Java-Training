@@ -16,12 +16,6 @@ public class CustomExceptionDemo1
     }
     private static void m3()
     {
-        try
-        {
-            throw new MyException("This is a demo for how to throw exception");
-        } catch (MyException e)
-        {
-            e.printStackTrace();
-        }
+        throw new MyException("This is a demo for how to throw exception");
     }
 }
