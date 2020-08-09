@@ -1,0 +1,14 @@
+JAVA.io----------------------------------->Package which helps us to perform IO operations on file using java.
+
+1.java.io.File :
+        *Constructor => File file = new File("Path of file");
+        *Important methods on file class ::
+               # exists()
+                     ->returns 'true' when the file is present in the location.
+                     ->returns 'false' when the file is not present in the location.
+               #createNewFile()
+                     ->returns 'true' if the file is created.And the new file will create when then the file does not exists on given path.
+                     ->returns 'false' when the file is already exists on given path.
+               #mkdir()
+                     ->creates new folder on given path.
+                     ->returns true when folder creation is success/false when creation got failed.
