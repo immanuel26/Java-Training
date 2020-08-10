@@ -1,14 +1,39 @@
-JAVA.io----------------------------------->Package which helps us to perform IO operations on file using java.
+JAVA.io----------------------------------------------------------------->Package which helps us to perform IO operations on file using java.
 
-1.java.io.File :
-        *Constructor => File file = new File("Path of file");
-        *Important methods on file class ::
+1. java.io.File :
+        * Constructor => File file = new File("Path of file");
+        * Important methods on file class ::
                # exists()
-                     ->returns 'true' when the file is present in the location.
-                     ->returns 'false' when the file is not present in the location.
-               #createNewFile()
-                     ->returns 'true' if the file is created.And the new file will create when then the file does not exists on given path.
-                     ->returns 'false' when the file is already exists on given path.
-               #mkdir()
-                     ->creates new folder on given path.
-                     ->returns true when folder creation is success/false when creation got failed.
+                     -> returns 'true' when the file is present in the location.
+                     -> returns 'false' when the file is not present in the location.
+               # createNewFile()
+                     -> returns 'true' if the file is created.And the new file will create when then the file does not exists on given path.
+                     -> returns 'false' when the file is already exists on given path.
+               # mkdir()
+                     -> creates new folder on given path.
+                     -> returns true when folder creation is success/false when creation got failed.
+
+2. FileWriter :
+        * Using FileWriter when we write data into file the data will be appended to the file at the end. There so method from FileWriter
+        to print data on new line. To print using FileWriter on a new line, we should call -> fw.write("\n");
+
+3. FileReader :
+        * Constructors :
+               # FileReader fr = new FileReader(String path);
+               # FileReader fr = new FileReader(File File);
+
+4. PrintWriter :
+        * Constructors :
+               # PrintWriter pw = new PrintWriter(String path);
+               # PrintWriter pw = new PrintWriter(File file);
+               # PrintWriter pw = new PrintWriter(Writer writer);
+        * Methods :
+               # write(int ch)               # print(char)            # println(char)
+               # write(char[])               # print(double)          # println(int)
+               # write(int data)             # print(float)           # println(boolean)
+               # write(String)                    ||                  # println(String)
+               # flush()                          ||                  # println(Object)
+               # close()                          ||
+
+5. **IMPORTANT**
+        *PrintWiter and BufferedReader will be used most frequently.
