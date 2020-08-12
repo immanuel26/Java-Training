@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.total_characters_in_file;
 
 import java.io.File;
 

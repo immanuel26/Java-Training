@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.file_delete;
 
 import java.io.File;
 

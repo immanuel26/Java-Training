@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.file_writer;
 
 import java.io.FileWriter;
 import java.io.IOException;

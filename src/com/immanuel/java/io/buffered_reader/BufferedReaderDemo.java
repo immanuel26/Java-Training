@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.buffered_reader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

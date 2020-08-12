@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.buffered_writer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

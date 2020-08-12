@@ -1,0 +1,27 @@
+We Can Write :
+
+1) A class inside another class.
+2) A class inside interface.
+3) A interface inside a class.
+4) A class inside a method.
+
+INNER CLASSES :
+
+* Regular Inner Classes - When you want to make without creating outer class, If you don't want to create inner class
+                        we use Regular Inner Classes Pattern.
+         # Examples : public class Country
+                      {
+                          private String name;
+                      }
+                      public class State
+                      {
+                          private String name;
+                      }
+
+* Object creation for Regular Inner class :
+         # Examples : Country country = new Country("Canada");
+                      Country.State state = country.new State("Toronto");
+
+* We cannot write static methods. So, We cannot write main method also, Which means we cannot run regular Inner Class as main() method application.
+
+* We can access outer class data (Variables and method) inside inner class including static.

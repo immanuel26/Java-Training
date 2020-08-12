@@ -1,4 +1,4 @@
-package com.immanuel.java.io;
+package com.immanuel.java.io.print_writer;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
