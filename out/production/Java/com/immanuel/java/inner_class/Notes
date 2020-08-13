@@ -7,8 +7,8 @@ We Can Write :
 
 INNER CLASSES :
 
-* Regular Inner Classes - When you want to make without creating outer class, If you don't want to create inner class
-                        we use Regular Inner Classes Pattern.
+@ Regular Inner Classes -> When you want to make without creating outer class, If you don't want to create inner class
+                           we use Regular Inner Classes Pattern.
          # Examples : public class Country
                       {
                           private String name;
@@ -25,3 +25,13 @@ INNER CLASSES :
 * We cannot write static methods. So, We cannot write main method also, Which means we cannot run regular Inner Class as main() method application.
 
 * We can access outer class data (Variables and method) inside inner class including static.
+
+@ Anonymous Inner Class -> A Class without name. When we need a class only one time in our project we use anonymous class.
+
+Regular Inner Class                                             VS   Static Inner Class
+1) Inner class is always associated with outereclass i.e             1) Static inner class is not associated with outer class. So
+   without creating outer clss object we cannot create                  without creating outere class can create inner class.
+   inner class
+2) In inner class we cannot write static methods.                    2) In static inner class we can write static methods.
+3) We cannot write main method in regular inner class.So,we          3) We can write static main method in static inner class so we can
+   cannot invoke regular inner class from command line.                 run static inner class from command line.
