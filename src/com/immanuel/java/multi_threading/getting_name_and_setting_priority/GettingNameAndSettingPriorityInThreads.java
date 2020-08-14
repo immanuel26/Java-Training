@@ -33,6 +33,5 @@ public class GettingNameAndSettingPriorityInThreads
         t2.join();
         System.out.println(t1.isAlive());       // isAlive() -> This will show whether the thread is alive or not.
         System.out.println("Bye");
-
     }
 }
