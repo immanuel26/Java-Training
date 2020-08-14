@@ -29,7 +29,7 @@ public class GettingNameAndSettingPriorityInThreads
         try {Thread.sleep(10);} catch (Exception e) {}
         t2.start();
 
-        t1.join();                              // join()    -> This will make the thread to print after the sub threads.
+        t1.join();                              // join()    -> This will make the main thread to print after the sub threads.
         t2.join();
         System.out.println(t1.isAlive());       // isAlive() -> This will show whether the thread is alive or not.
         System.out.println("Bye");
