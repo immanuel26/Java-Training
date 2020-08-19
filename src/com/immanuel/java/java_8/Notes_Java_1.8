@@ -1,0 +1,24 @@
+JAVA-1.8
+
+Marker Interface : Interface without methods......ex: Serializable.
+
+Functional Interface : Interface with exactly one abstract methods.....ex: Runnable.
+
+Functional Programming(Lambda expression)
+          -> For only Functional Interface we can write lambda expression.
+
+* Interface name is not required.
+* Access Modifier is not required.
+* Method Return type is not required.
+* Name of the method is not required.
+* Methods input type parameter typers are not required.
+* -> Should be there in between method parameters and method body.
+* If Input parameter count is exactly one, Then () are optional.
+* If The lambda expression body is exactly one then {} are optional.
+* If the lambda expression body is exactly one then return keyword are optional.
+* We should lambda expressions only for the interface which are annotated with
+  @FunctionalInterface(Though it is optional it is always recommended)
+  @FunctionalInterface :
+         # To have exactly one abstract method on interface, we will use this annotaion.
+         # This interface introduced in 1.8 java.
+         # This is present in java.lang package.

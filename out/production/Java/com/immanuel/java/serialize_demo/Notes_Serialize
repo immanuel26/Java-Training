@@ -1,0 +1,17 @@
+$ Serialization :
+
+* When we want to make an object to travel over the network (OR) to get converted into file format, Then that object must be serializable.
+       -> The process of converting Object state into network transferrable format (OR) file format is called Serialization.
+       -> The process of converting network transferrable format (OR) file format to a Object state is called De-Serialization.
+
+$ Serializable :
+       -> This is an interface which present in java.io package.
+       -> This interface does not have any methods.
+       -> In java if an interface without methods is called MARKER INTERFACE.
+
+$ Transient :
+       -> When we dont want a particular property not to be participate on serialization then we need mark that property as transient.
+
+$ Static :
+       -> Serialization is the process applicable only for Object not for class level data. So for static variables,
+          Serialization is not applicable.
