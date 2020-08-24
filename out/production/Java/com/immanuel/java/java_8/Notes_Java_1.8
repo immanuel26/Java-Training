@@ -4,7 +4,7 @@ Marker Interface : Interface without methods......ex: Serializable.
 
 Functional Interface : Interface with exactly one abstract methods.....ex: Runnable.
 
-Functional Programming(Lammbda expression)
+Functional Programming(Lambda expression)
           -> For only Functional Interface we can write lambda expression.
 
 * Interface name is not required.
@@ -18,3 +18,12 @@ Functional Programming(Lammbda expression)
 * If the lambda expression body is exactly one then return keyword are optional.
 * We should lambda expressions only for the interface which are annotated with
   @FunctionalInterface(Though it is optional it is always recommended)
+  @FunctionalInterface :
+         # To have exactly one abstract method on interface, we will use this annotaion.
+         # This interface introduced in 1.8 java.
+         # This is present in java.lang package.
+
+               Anonymous Inner Class                     VS                      Lambda Expressions
+1) We can use anonymous innerclass for any interface          1) We can write lamda expression only for functional interface.
+2) For every anonymous inner class compiler will              2) No new class will be generated for lamda expressions,
+   generate a new class file (Ex. Main$1)                        So every Lambda expression is like an instance method.

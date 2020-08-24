@@ -4,11 +4,12 @@ public class Main
 {
     public static void main(String[] args) throws InterruptedException
     {
-        for (int i = 0; i < 10000 ; i++)
+        for (int i = 0; i <= 10000 ; i++)
         {
             Test test = new Test();
         }
     System.gc();
-    Thread.sleep(20000);
+    Runtime.getRuntime().gc();
+    Thread.sleep(0);
     }
 }
