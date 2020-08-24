@@ -14,7 +14,7 @@ public class MultiTaskdemo
         Runnable task2 = () -> {
                                for (int r = 26; r <= 50; r++)
                                {
-                               System.out.println("R Value : " + r + " -> " +Thread.currentThread().getName());
+                                   System.out.println("R Value : " + r + " -> " +Thread.currentThread().getName());
                                }
                                };
         Thread thread1 = new Thread(task1);
