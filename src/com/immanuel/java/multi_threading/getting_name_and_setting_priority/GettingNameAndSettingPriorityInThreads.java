@@ -6,19 +6,17 @@ public class GettingNameAndSettingPriorityInThreads
     {
         Thread t1 = new Thread(() ->  {for (int i = 1; i <= 5; i++)
                                       {
-                                           System.out.println("Hai Everyone and Priority : " +Thread.currentThread().getPriority());
+                                           System.out.println("Hai Everyone and Priority : " +Thread.currentThread().getPriority() +" " + Thread.currentThread().getName());
                                            try {Thread.sleep(1000);} catch (Exception e) {}
                                       }
                                       },"Thread Name : Hai");
         Thread t2 = new Thread(() ->  {for (int i = 1; i <= 5; i++)
                                       {
-                                           System.out.println("Hello MyWorld and Priority : " +Thread.currentThread().getPriority());
+                                           System.out.println("Hello MyWorld and Priority : " +Thread.currentThread().getPriority() + " " + Thread.currentThread().getName());
                                            try {Thread.sleep(1000);} catch (Exception e) {}
                                       }
                                       },"Thread Name : Hello");
 
-        System.out.println(t1.getName());
-        System.out.println(t2.getName());
 
         t1.setPriority(Thread.MAX_PRIORITY);    // MAX_PRIORITY  = 10
         t2.setPriority(Thread.MIN_PRIORITY);    // MIN_PRIORITY  = 1
