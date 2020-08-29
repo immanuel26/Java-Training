@@ -30,3 +30,9 @@ NOTE : In both approaches we should not call run() directly. We should always st
    call start() method.                                    run() is callback method, it will
                                                            automatically called by start().
 
+Issue :
+       -> One thread can execute one task.
+       -> Threads re-usability is missing.
+       -> run() no input and no output.
+       -> No update on task completion.
+       -> We cant cancel the task once it submitted.

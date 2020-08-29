@@ -1,0 +1,33 @@
+Collection(I) :
+    01) int size()                                = Returns the number of elements which are present on the collection.
+    02) boolean isEmpty()                         = returns Returns false when it is not empty.
+    03) void clear()                              = To remove all the object from collection.
+    04) boolean contains(Object obj)              = A particular object is present on the collection.
+    05) boolean containsAll(Collection obj)       = A particular object is present on the collection.
+    06) Object[] toArray()                        = Convert Collection to Array.
+    07) boolean add(Object obj)                   = Returns true if the object is added to the collection.
+    08) boolean addAll(Collection collection)     = To add one collection to other collection.
+    09) boolean remove(Object obj)                = Returns true if the object is removed from the collection.
+    10) boolean removeAll(Collection c)           = To remove one set of object from collection.
+    11) boolean retainAll(Collection c)           = To remove except passed collection.
+    12) default Stream<E> stream()                = To convert Collection to Stream Object.
+
+List(I) :
+    01) boolean add(int index, Object obj);       = To add a particular object on a particular index.
+    02) boolean addAll(int index, Collection c);  = To add a Collection on a particular index.
+    03) Object remove(int index)                  = When we want to remove an object on specific index.
+    04) Object get(int index);                    = This method will return an object which is present on passed index.
+    05) Object set(int index, Object obj)         = To replace the object on specific index.
+    06) int index(Object obj);                    = This method will return the index of passed Object.
+    07) int lastIndexOf(Object obj)               = Method will return the last occurence of specific Object.
+    08) ListIterator listIterator();
+
+Use Case : If our requirement is index based operations, Then we choose List type.
+                  => Duplicates are allowed.
+                  => Insertion order is important.
+
+The Implementation classes for List are
+    01) ArrayList(C).
+    02) LinkedList.
+    03) Vector.
+            -Stack.
