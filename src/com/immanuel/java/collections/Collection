@@ -22,6 +22,23 @@ List(I) :
     07) int lastIndexOf(Object obj)               = Method will return the last occurence of specific Object.
     08) ListIterator listIterator();
 
+Vector :
+    01) add(Object obj); Collection.
+    02) add(int index, Object obj); List.
+    03) addElement(Object obj); Vector
+    04) remove(Object obj); Collection.
+    05) removeElement(Object obj); Vector.
+    06) remove(int index); List.
+    07) removeElementAt(int index);
+    08) clear(); Collection.
+    09) removeAllElements(); Vector.
+    10) get(int index); List
+    11) elementAt(int index); Vector
+    12) firstElement(); Vector.
+    13) listElement(); Vector.
+    14) int size();
+    15) int capacity();
+
 Use Case : If our requirement is index based operations, Then we choose List type.
                   => Duplicates are allowed.
                   => Insertion order is important.
@@ -43,3 +60,12 @@ ArrayList(C) :
 
     03) List<String> list = new ArrayList<>(Collection collection);
             -> Converts Collection type to ArrayList
+
+Linkedlist(C) :
+    01) Data will insert on insertion order.
+    02) Duplicate object are allowed.
+    03) We insert null
+        PROS : Deleting and updating operations.
+        CONS : Reading the data.
+            -> List<String> linkedlist = new LinkedList<>();
+            -> List<String> linkedlist = new LinkedList<>(COllection collection);
