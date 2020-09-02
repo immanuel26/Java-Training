@@ -1,0 +1,19 @@
+Set(I) :
+         - HashSet(C).
+         - LinkedHashSet(C).
+         - SortedSet(I).
+                - NavigableSet(C).
+                   - TreeSet(C).
+
+    * Set is direct child to interface to collection.
+    * When we dont want to allow duplicates in collection then use set.
+
+# HashSet :
+         01) This won't allow duplicates.
+         02) Insertion is not same. It will stored based on HashCode the data will get inserted.
+         03) We can insert null only for one time. Since Set won't allow duplicates.
+
+    * Set<String> set = new HashSet<>();                                  // default set 16 . Default rate ratio 75%.
+    * Set<String> set = new HashSet<>(int initialsize);                   // HashSet will be created with specific size. Default rate ratio 75%.
+    * Set<String> set = new HashSet<>(int initialsize, float fillratio);
+    * Set<String> set = new HashSet<>(Collection collection);

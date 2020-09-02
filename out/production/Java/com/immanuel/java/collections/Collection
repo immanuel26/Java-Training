@@ -73,3 +73,9 @@ Linkedlist(C) :
 Stack :
       Its Child class of vector.
       Stack stack = new Stack();
+    01) Object push(Object o);     -> To add an object to stack.
+    02) Object pop();              -> Remove the top element and return.
+    03) Object peek();             -> Return the top element.
+    04) boolean empty();           -> Return true if the sack is empty.
+    05) int search(Object obj);    -> Returns the index of object. If the object is not found then it will retun -1.
+

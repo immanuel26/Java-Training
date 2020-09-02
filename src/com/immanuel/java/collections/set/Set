@@ -1,0 +1,28 @@
+Set(I) :
+         - HashSet(C).
+         - LinkedHashSet(C).
+         - SortedSet(I).
+                - NavigableSet(C).
+                   - TreeSet(C).
+
+    * Set is direct child to interface to collection.
+    * When we don't want to allow duplicates in collection then use set.
+
+# HashSet :
+         01) This won't allow duplicates.
+         02) Insertion order is not same. It will stored based on HashCode the data will get inserted.
+         03) We can insert null only for one time. Since Set won't allow duplicates.
+
+    * Set<String> set = new HashSet<>();                                  // default set 16 . Default rate ratio 75%.
+    * Set<String> set = new HashSet<>(int initialSize);                   // HashSet will be created with specific size. Default rate ratio 75%.
+    * Set<String> set = new HashSet<>(int initialSize, float fillRatio);
+    * Set<String> set = new HashSet<>(Collection collection);
+
+NOTE : * Set internally user contains() to check the element is already present. If the element is already there then that object won't be added.
+         contains() method internally equals() whether the object are equals or not. If we don't override equals() then object class equals()
+         will check address comparison.
+       * In java string & All wrapper(Integer/Boolean/Double/long/Character/Byte/Short/Float) already overriden equals() for content.
+         So, When you do example with String/Numbers you don't have any issue working with set.
+
+# LinkedHashSet :
+         The only difference b/w HashSet and LinkedHashSet, Hash doesn't store the data in the order we pass. But LinkedHashSet the data sorted with insertion order.
