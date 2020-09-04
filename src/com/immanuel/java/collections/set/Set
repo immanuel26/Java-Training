@@ -21,8 +21,19 @@ Set(I) :
 NOTE : * Set internally user contains() to check the element is already present. If the element is already there then that object won't be added.
          contains() method internally equals() whether the object are equals or not. If we don't override equals() then object class equals()
          will check address comparison.
-       * In java string & All wrapper(Integer/Boolean/Double/long/Character/Byte/Short/Float) already overriden equals() for content.
+       * In java string & All wrapper(Integer/Boolean/Double/long/Character/Byte/Short/Float) already override equals() for content.
          So, When you do example with String/Numbers you don't have any issue working with set.
 
 # LinkedHashSet :
-         The only difference b/w HashSet and LinkedHashSet, Hash doesn't store the data in the order we pass. But LinkedHashSet the data sorted with insertion order.
+         * The only difference b/w HashSet and LinkedHashSet, Hash doesn't store the data in the order we pass. But LinkedHashSet the data sorted with insertion order.
+         * When we want data without duplicates and the insertion order is important then we use LinkedHashSet.
+
+# SortedSet(I) :
+                Set
+                 |
+              SortedSet
+                 |
+             NavigableSet
+                 |
+              TreeSet
+                          |
