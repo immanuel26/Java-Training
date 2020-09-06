@@ -1,0 +1,31 @@
+Map(I) :
+       * It is an Interface.
+       * There is no relationship between collection and map.
+       * When we want to store data in terms of KEY-VALUE pair, Then we use map
+            # Duplicate Keys are no allowed. Duplicate values are allowed.
+            # Collection is to group individual data. But map is tp group data as a KEY-VALUE pair.
+
+
+            It is divided into Five. They are,
+            * HashMap(C) --> LinkedHashMap.
+            * WeakHashMap(C).
+            * IdentityHashMap(C).
+            * SortedMap(I) --> NavigableSortedMap(I) --> TreeMap(C).
+            * HashTable(C) --> Properties(C).
+
+01) Object put(Object Key, Object value); --> To add an object to map
+02) int size();
+03) boolean isEmpty();
+04) put(Key, Value) --> put method will always add the data
+05) default V putIfAbsent(Key, Value); (1.8) --> This is the method will add the data only when the  key is not present on map.
+06) void putAll(Map m) --> To add map to another map.
+07) Object get(object key); --> pass key and get the value. If the key is not present on map you will get null.
+          Note : Check null condition before using the value to avoid nullPointerException.
+08) default Object getOrDefault(Object K, Object defaultValue);
+          If the key not exists then the default value will be returned.
+09) Object remove(Object key);
+10) boolean containsKey(Object Key);
+11) boolean contgainsValue(Object Value);
+12) Set Keyset();
+13) Collection values();
+14) Set entrySet();

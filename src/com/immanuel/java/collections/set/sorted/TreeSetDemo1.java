@@ -1,5 +1,6 @@
 package com.immanuel.java.collections.set.sorted;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -7,40 +8,36 @@ public class TreeSetDemo1
 {
     public static void main(String[] args)
     {
+        String sortType = "Relevance";
 
-        // Relevance Ascending Sorting.
-        Set<Mobile> mobileSet1 = new TreeSet<>((o1,  o2) -> o1.getRelevance().compareTo(o2.getRelevance()));
-        addMobile(mobileSet1);
-        for (Mobile mobile1 : mobileSet1)
+        if (args.length > 0)
         {
-            System.out.println(mobile1);
+            sortType = args[0];
         }
-        System.out.println("--------------------------------------------------------------------------------------------");
 
-        // Relevance Descending Sorting.
-        Set<Mobile> mobileSet2 = new TreeSet<>((o1,  o2) -> o2.getRelevance().compareTo(o1.getRelevance()));
-        addMobile(mobileSet2);
-        for (Mobile mobile2 : mobileSet2)
+        Comparator<Mobile> sortTypeComparator = getComparatorBySort(sortType);
+
+        Set<Mobile> mobileSet = new TreeSet<>(sortTypeComparator);
+        addMobile(mobileSet);
+        for (Mobile mobile : mobileSet)
         {
-            System.out.println(mobile2);
+            System.out.println(mobile);
         }
-        System.out.println("--------------------------------------------------------------------------------------------");
-
-        // Name Sorted A-Z.
-        Set<Mobile> mobileSet3 = new TreeSet<>((o1,  o2) -> o1.getName().compareTo(o2.getName()));
-        addMobile(mobileSet3);
-        for (Mobile mobile3 : mobileSet3)
+    }
+    private static Comparator<Mobile> getComparatorBySort(String sortType )
+    {
+        switch (sortType)
         {
-            System.out.println(mobile3);
-        }
-        System.out.println("--------------------------------------------------------------------------------------------");
-
-        // Name Sorted Z-A.
-        Set<Mobile> mobileSet4 = new TreeSet<>((o1,  o2) -> o2.getName().compareTo(o1.getName()));
-        addMobile(mobileSet4);
-        for (Mobile mobile4 : mobileSet4)
-        {
-            System.out.println(mobile4);
+            case "Name:A-Z" :
+                return (o1,  o2) -> o1.getName().compareTo(o2.getName());
+            case "Name:Z-A" :
+                return (o1,  o2) -> o2.getName().compareTo(o1.getName());
+            case "Price:Lowest-Highest" :
+                return (o1,  o2) -> o1.getPrice().compareTo(o2.getPrice());
+            case "Price:Highest-Lowest" :
+                return (o1,  o2) -> o2.getPrice().compareTo(o1.getPrice());
+            default :
+                return (o1,  o2) -> o1.getRelevance().compareTo(o2.getRelevance());
         }
     }
     private static Set<Mobile> addMobile(Set<Mobile> mobileSet)
