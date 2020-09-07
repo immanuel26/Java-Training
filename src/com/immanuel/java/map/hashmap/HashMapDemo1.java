@@ -1,11 +1,11 @@
-package com.immanuel.java.map;
+package com.immanuel.java.map.hashmap;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class MapDemo1
+public class HashMapDemo1
 {
     public static void main(String[] args)
     {
@@ -26,6 +26,7 @@ public class MapDemo1
         {
             System.out.println(name);
         }
+
         Collection<Integer> ids = hashMap.values();
         for (Integer id : ids)
         {
@@ -33,7 +34,8 @@ public class MapDemo1
         }
         System.out.println("--------------------------------------------");
 
-        for (Map.Entry<String, Integer> nameMap : hashMap.entrySet()) {
+        for (Map.Entry<String, Integer> nameMap : hashMap.entrySet())
+        {
             System.out.println(nameMap.getKey() + " = " + nameMap.getValue());
         }
     }

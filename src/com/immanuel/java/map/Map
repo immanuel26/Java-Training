@@ -26,6 +26,19 @@ Map(I) :
 09) Object remove(Object key);
 10) boolean containsKey(Object Key);
 11) boolean containsValue(Object Value);
-12) Set Keyset();
+12) Set KeySet();
 13) Collection values();
 14) Set entrySet();
+
+HashMap(C) :
+   * HashMap is one of the implementation for map.
+   * Insertion order is not going to preserve.
+   * Null key is allowed only one time.
+   * Null values are allowed (Any number of times).
+   * Duplicate Keys are not allowed but duplicate values are allowed.
+
+LinkedHashMap(C) :
+   * LinkedHashMap is going to preserve the insertion order other than that both HashMap and LinkedHashMap are one and the same.
+
+WeakhashMap(C) :
+   * WeakHashMap will allow garbage collector to clear the data. So, storing the huge amount of data will cause OutOfMemory, So clear it once we did it.
